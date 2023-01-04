@@ -1,0 +1,12 @@
+name: Koshak's AntiVPN
+main: com.koshakmine.antivpn.Main
+version: "1.0"
+api: [ "1.0.14" ]
+load: POSTWORLD
+author: Koshak_Mine
+description: ""
+prefix: "Koshak's AntiVPN"
+
+permissions:
+  kantivpn.bypass:
+    default: op
