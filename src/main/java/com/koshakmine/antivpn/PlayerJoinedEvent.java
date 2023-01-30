@@ -5,6 +5,7 @@ import cn.nukkit.event.EventHandler;
 import cn.nukkit.event.Listener;
 import cn.nukkit.event.player.PlayerJoinEvent;
 
+
 public class PlayerJoinedEvent implements Listener {
 
     @EventHandler
@@ -14,7 +15,7 @@ public class PlayerJoinedEvent implements Listener {
         if(!player.hasPermission("kantivpn.bypass")) {
             double ipScore = Main.instance.requestIPScore(ip);
             if(ipScore > 0.98) {
-                player.kick("[Koshak's AntiVPN] §cYou are using VPN!. Please, rejoin without it." );
+                player.kick("[Koshak's AntiVPN] §cYou are using VPN!. \n Please, rejoin without it.", false);
             }
         }
     }
