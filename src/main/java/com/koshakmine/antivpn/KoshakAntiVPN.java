@@ -2,6 +2,7 @@ package com.koshakmine.antivpn;
 import cn.nukkit.plugin.PluginBase;
 import cn.nukkit.plugin.PluginLogger;
 import cn.nukkit.utils.Config;
+import cn.nukkit.utils.TextFormat;
 import lombok.Getter;
 
 import java.io.BufferedReader;
@@ -59,8 +60,8 @@ public class KoshakAntiVPN extends PluginBase {
                 }}
         );
 
-        this.kickMessage = config.get("KICK_MESSAGE",
-                "[Koshak's AntiVPN] §cYou are using VPN!. Please, rejoin without it.");
+        this.kickMessage = TextFormat.colorize('&', config.get("KICK_MESSAGE",
+                "&b[Koshak's AntiVPN] §cYou are using VPN!. Please, rejoin without it."));
 
 
 
