@@ -1,6 +1,6 @@
 name: Koshak's AntiVPN
-main: com.koshakmine.antivpn.Main
-version: "1.1"
+main: com.koshakmine.antivpn.KoshakAntiVPN
+version: "1.2"
 api: [ "1.0.14" ]
 load: POSTWORLD
 author: Koshak_Mine
